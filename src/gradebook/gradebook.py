@@ -3,3 +3,5 @@ class Student:
         self.name = name
         self.roll_no = roll_no
         self.scores = scores
+
+    def add_score(self, score):
