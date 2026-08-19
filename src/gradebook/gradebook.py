@@ -8,4 +8,6 @@ class Student:
         """Add a score to the student's scores after validating it."""
         if score < 0:
             raise ValueError("Score cannot be negative")
-        self.scores.append(score)
+        self.scores.append(score) 
+
+        # added the comments
