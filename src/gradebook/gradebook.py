@@ -4,10 +4,11 @@ class Student:
         self.roll_no = roll_no
         self.scores = scores
 
-    def add_score(self, score):
-        """Add a score to the student's scores after validating it."""
-        if score < 0:
-            raise ValueError("Score cannot be negative")
-        self.scores.append(score) 
+    def add_score(self, student_score):
+        """Add a valid score to the student's scores."""
+        if not isinstance(student_score, (int, float)):
+            raise ValueError("Score must be numeric")
+        if student_score < 0 or student_score > 100:
+            raise ValueError("Score must be between 0 and 100") 
 
-        # added the comments
+            self.scores.append(student_score)
