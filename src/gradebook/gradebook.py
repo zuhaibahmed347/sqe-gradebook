@@ -9,5 +9,3 @@ class Student:
             return 0.0
 
         return sum(self.scores) / len(self.scores)
-
-    #  this is the new file where I make changes
