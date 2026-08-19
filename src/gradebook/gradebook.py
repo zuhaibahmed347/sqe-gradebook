@@ -5,5 +5,7 @@ class Student:
         self.scores = scores
 
     def add_score(self, score):
+        """Add a score to the student's scores after validating it."""
         if score < 0:
             raise ValueError("Score cannot be negative")
+        self.scores.append(score)
