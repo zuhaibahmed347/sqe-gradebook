@@ -8,7 +8,17 @@ aba30cb add student class stub
 cd4e04c 'chore: initial project structure'
 f1ceb54 Update gradebook.py
 36e7e0c Create gradebook.py
-8126309 Create __init__.py
-1bbd657 Delete src/gradebook directory
-a6f0464 Create __init__.py
-af95a25 Initial commit
+
+
+
+# Comments 
+refactor(student): validate score is numeric and within 0-100 range
+
+Previously add_score() only rejected negative values. This adds
+type-checking and an upper bound so invalid scores fail fast with
+a clear ValueError instead of silently corrupting the scores list.
+
+refactor(student): rename score param and tighten validation per review
+
+Renamed `score` to `student_score` for clarity, added numeric type
+check and upper-bound validation (0-100) as requested in PR #3 review.
