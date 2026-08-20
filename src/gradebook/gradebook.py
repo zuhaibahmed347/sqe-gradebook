@@ -1,7 +1,7 @@
 class Student:
-    def __init__(self, name, roll_no, scores):
+    def __init__(self, name, id_number, scores):
         self.name = name
-        self.roll_no = roll_no
+        self.id_number = id_number
         self.scores = scores
 
     def add_score(self, student_score):
